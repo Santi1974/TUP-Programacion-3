@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Practico HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Encabezado Principal</h1>
+        </header>
+
+        <nav>
+            <p>Navegacion: </p>
+            <ul>
+                <li>
+                    <a href="#estructura">Estructura</a>
+                </li>
+                <li>
+                    <a href="#multimedia">Multimedia</a>
+                </li>
+                <li>
+                    <a href="#formulario">Formulario</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="estructura">
+            <h1>1. Estructura Basica del Documento HTML</h1>
+            <p>Este documento HTML tiene una estructura basica que incluye la declaracion de DOCTYPE, etiquetas de metadatos y un titulo.</p>
+        </section>
+
+        <section>
+            <h1>2. Encabezados y Propiedades del Texto</h1>
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
+            <h4>Encabezado 4</h4>
+            <h5>Encabezado 5</h5>
+            <h6>Encabezado 6</h6>
+            <p style="font-weight: bold;">Este es un texto en negrita.</p>
+            <p style="font-style: italic;">Este es un texto en cursiva.</p>
+            <p style="text-decoration: underline;">Este es un texto subrayado.</p>
+        </section>
+
+        <section>
+            <h1>3. Divisiones y Agrupacion del Contenidos</h1>
+            <div>
+                <h3>Seccion 1</h3>
+                <p>Contenido de la primera seccion agrupada en un div</p>
+            </div>
+            <div>
+                <h3>Seccion 2</h3>
+                <p>Contenido de la segunda seccion agrupada en un div</p>
+            </div>
+        </section>
+
+        <section>
+            <h1>4. Enlaces y Listas</h1>
+            <p>Visita nuestro <a href="https://www.youtube.com">sitio web</a> para mas informacion.</p>
+            <p>Enlaces internos</p>
+            <ul>
+                <li><a href="#estructura">Ir a Estructura</a></li>
+                <li><a href="#multimedia">Ir a Multimedia</a></li>
+                <li><a href="#formulario">Ir a Formulario</a></li>
+            </ul>
+            <p>Lista desordenada:</p>
+            <ul>
+                <li>Primer ítem de una lista desordenada</li>
+                <li>Segundo ítem de una lista desordenada</li>
+            </ul>
+            <p>Lista ordenada:</p>
+            <ol>
+                <li>Primer item de una lista ordenada</li>
+                <li>Segundo item de una lista ordenada</li>
+            </ol>
+        </section>
+
+        <section id="multimedia">
+            <h1>5. Elementos multimedia</h1>
+            <img width="200px" src="assets/imagen-ejemplo.jpg" alt="Persona estudiando">
+            <video width="250px" controls>
+                <source src="assets/video-ejemplo.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="assets/audio-ejemplo.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section>
+            <h1>6. Tablas</h1>
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="formulario">
+            <h1>7. Formularios</h1>
+            <form action="/submit" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>2024 Trabajo Practico de HTML - Santiago Beneitez</p>
+        </footer>
+    </body>
+</html>
